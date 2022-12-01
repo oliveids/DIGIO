@@ -8,7 +8,6 @@ target 'Digio Test' do
   # Pods for Digio Test
 pod 'RxSwift'
 pod 'RxGesture'
-pod 'SwiftLint'
 pod 'SDWebImage'
 
   target 'Digio TestTests' do

@@ -1,0 +1,50 @@
+disabled_rules: # identificadores de regras a serem excluídos da execução / rule identifiers to exclude from running
+    - identifier_name
+    - variable_name
+    - nesting
+    - function_parameter_count
+    - trailing_newline
+    - colon
+    - comma
+    - control_statement
+opt_in_rules: # algumas regras são apenas opt-in / some rules are only opt-in
+    - empty_count
+
+excluded: # caminhos a serem ignorados durante o linting. Tem precedência sobre 'incluído'./ paths to ignore during linting. Takes precedence over `included`.
+    - Pods
+    - Carthage
+
+# regras configuráveis ​​podem ser personalizadas a partir deste arquivo de configuração
+# regras binárias podem definir seu nível de gravidade
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning #implicitamente. Dar aviso apenas para lançamento de força / implicitly. Give warning only for force casting
+
+force_try:
+    severity: warning # explicitamente. Dê um aviso apenas para tentar forçar / explicitly. Give warning only for force try
+
+type_body_length:
+    - 300 # aviso / warning
+    - 400 # erro / error
+
+# ou eles podem definir ambos explicitamente / or they can set both explicitly
+file_length:
+    warning: 500
+    error: 800
+
+large_tuple: # avisa o usuário ao usar 3 valores na tupla, dá erro se houver 4 / warn user when using 3 values in tuple, give error if there are 4
+    - 3
+    - 4
+
+# regras de nomenclatura podem definir avisos/erros para min_length e max_length
+# além disso, eles podem definir nomes excluídos
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+    min_length: 4 # only warning
+    max_length: # warning and error
+    warning: 30
+    error: 35
+    excluded: iPhone # excluded via string
+reporter: "xcode"
+

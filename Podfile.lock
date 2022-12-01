@@ -1,0 +1,45 @@
+PODS:
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxGesture (4.0.3):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.12.4):
+    - SDWebImage/Core (= 5.12.4)
+  - SDWebImage/Core (5.12.4)
+  - SnapshotTesting (1.8.2)
+  - SwiftLint (0.47.0)
+
+DEPENDENCIES:
+  - RxGesture
+  - RxSwift
+  - SDWebImage
+  - SnapshotTesting (~> 1.8.1)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SnapshotTesting
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxGesture: abadd243fc36db74df43dfc893829ddde94f1a3d
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 631cf572cc93dfdfe54162e556410a61f1141928
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
+  SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
+
+PODFILE CHECKSUM: cb21db88ebcece55dc7cdd662ff7ba6dd48e1cf0
+
+COCOAPODS: 1.11.3
